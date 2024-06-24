@@ -1,0 +1,360 @@
+@import url('https://font.googleapis.com/css?family=open+sans:wght@300;400,600;700;800&display=swap');
+
+body {
+    line-height: 1.5;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../gambar/background.png);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    align-content: center;
+    height: 100vh;
+    margin: 0; 
+    padding-top: 70px;
+}
+
+
+.bg {
+    background-color: #e7e7e7;
+    display: flex;
+    padding: 0px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.6);
+}
+
+.img-Camera{
+    display: flex;
+    transition: all 0.5s ease;
+    height: 500px;
+    align-self: center;
+    padding-top: 35px;
+}
+
+.img-Camera img {
+    border-radius: 15px;
+}
+
+.product-content{
+    flex: 1;
+    margin-left: 50px;
+    font-size: small;
+
+}
+
+.product-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background-color: #e7e7e7;
+    color: rgb(0, 0, 0);
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+    margin-top: 50px;
+    margin-left: -160px;
+    border-radius: 25px;
+    padding: 10px;
+    border: 2px solid #f6c90e;
+}
+
+.product-linK:hover {
+    border: 1px solid #f6c90e;
+    background: #f6c90e;
+    color: #f7f7f7;
+    transition: 0.2s all linear;
+}
+
+
+.product-price{
+    margin: o.5rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+
+.product-detail {
+    top: 0;
+    padding-top: 0%;
+    color: rgb(0, 0, 0);
+}
+
+.product-detail h2{
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    top: 0;
+    padding-top: 0%;
+}
+.product-detail li{
+    font-size: 0.75rem;
+    padding: 0.3;
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
+}
+.product-Category ul{
+    font-size: 0.9rem;
+}
+.product-Category ul li{
+    margin: 0;
+    list-style: none;
+    background: url(cheklist.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-Category ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.btn{
+    padding: 0 1rem;
+    border-radius: 4px;
+    border: 5px solid #f6c90e;
+    text-transform: uppercase;
+    color: black; 
+}
+
+.btn:hover{
+    border: 1px solid #f6c90e;
+    background: #f6c90e;
+    color: #f7f7f7;
+    transition: 0.2s all linear;
+}
+
+.rate {
+    float: left;
+    padding-top: -40%;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ffc700;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigasi
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.navigasi
+{
+    background-color: #303841;
+    height: 70px;
+    width: 100%;
+    
+}
+.navigasi .logo
+{
+    position: relative;
+    max-width: 150px;
+    left: 3px;
+}
+
+.navigasi ul
+{
+    position: relative;
+    display: flex;
+    right: 500px;
+    font-size: 15px;
+}
+.navigasi ul li
+{
+    list-style: none;
+}
+.navigasi ul li a
+{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.navigasi ul a:hover
+{
+    color: #F6C90E;
+
+}
+.slidebar
+{
+    position: fixed;
+    top: 70;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #36434d;
+    transition: all .5s ease;
+    z-index: 1;
+}
+.slidebar .illustration
+{
+    display: flex;
+    padding: 20px 70px;
+    width: 125px;
+    height: 125px
+}
+.slidebar .icons .desc
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.slidebar .icons i
+{
+    margin-right: 10px;
+}
+.slidebar .icons
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 230px;
+    box-sizing: border-box;
+    transition : all ease-in .2s
+}
+.slidebar .icons:hover
+{
+    background: #F6C90E;
+    transition : all ease-in .2s
+}
+/* Tombol Menu */
+
+#check
+{
+    display: none;
+    position: fixed;
+}
+label #btn, label #cancel
+{
+    position: fixed;
+    cursor: pointer;
+    background: #ffffff;
+
+}
+
+label #btn
+{
+    left: 20px;
+    top: 90px;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #424242;
+    padding: 8px 12px;
+    transition: all .5s;
+}
+
+label #cancel
+{
+    z-index: 1111;
+    left: -50px;
+    top: 80px;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #303841;
+    padding: 4px 8px;
+    transition: all .5s ease;
+}
+#check:checked ~ .slidebar
+{
+    left: 0;
+}
+
+#check:checked ~ label #btn
+{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel
+{
+    left: 195px;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+/*variables*/
+:root{
+    --main-color: #f6c90e;
+    --second-color: #f7f7f7;
+    --text-color: #ffffff;
+    --bg-color: #fff;
+}
+section{
+    padding: 50px 100px;
+}
+.home .home-img{
+    width: 50%;
+    margin-left: 130px;
+}
+img{
+    width: 100%;
+}
+body{
+    color: var(--text-color);
+}
+
+.namamerk {
+    color: black;
+}
+
+.main-content {
+    background: url(../gambar/background.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text h1{
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3.4rem
+}
+.home-text p{
+    font-size: 1.8rem;
+    color: var(--bg-color);
+    margin: 0.5rem 0 1.4rem;
+}
+.btn{
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-position: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    border: 3px solid #f7f7f7;
+}
+.btn:hover{
+    border: 1px solid #f6c90e;
+    background: #f6c90e;
+    color: #f7f7f7;
+    transition: all 0.3s ease;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    border-radius: 0.5rem;
+}
+.about-text h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.about-text p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.1rem;
+}
+.btn-about{
+    padding: 10px 40px;
+    border-radius: 0.3rem;
+    background-position: var(--main-color);
+    color: var(--bg-color);
+    background: #f6c90e;
+    font-weight: 500;
+    border: 3px solid #f6c90e;
+}
+.heading{
+    text-align: center;
+
+}
+.heading h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, auto));
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    z-index: -3;
+}
+.products-container .box{
+    position: relative;
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    padding: 10px;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    background-color: #e7e7e7;
+    z-index: 1;
+}
+.products-container .box img{
+    border-radius: 0.5rem;
+}
+.products-container .box h3{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.5rem;
+}
+.btn1{
+   padding: 0 1rem;
+   color: var(--text-color);
+   border: 2px solid var(--main-color);
+   border-radius: 4px;
+   text-transform: uppercase;
+   color: black; 
+}
+.btn1:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.2s all linear;
+}
+ .btn6{
+    padding: 0 1rem;
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    text-transform: uppercase; 
+    color: black; 
+ }
+ 
+ .btn6:hover{
+     background: var(--main-color);
+     color: var(--bg-color);
+     transition: 0.2s all linear;
+ }
+ .btn7{
+    padding: 0 1rem;
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    text-transform: uppercase; 
+    color: black; 
+ }
+
+ .btn7:hover{
+     background: var(--main-color);
+     color: var(--bg-color);
+     transition: 0.2s all linear;
+ }
+ .btn8{
+    padding: 0 1rem;
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    text-transform: uppercase; 
+    color: black; 
+ }
+ .btn8:hover{
+     background: var(--main-color);
+     color: var(--bg-color);
+     transition: 0.2s all linear;
+ }
+ .btn9{
+    padding: 0 1rem;
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    text-transform: uppercase; 
+    color: black; 
+ }
+ .btn9:hover{
+     background: var(--main-color);
+     color: var(--bg-color);
+     transition: 0.2s all linear;
+ }
+
+.navigasi
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.navigasi
+{
+    background-color: #303841;
+    height: 70px;
+    width: 100%;
+    
+}
+.navigasi .logo
+{
+    position: relative;
+    max-width: 150px;
+    left: 3px;
+}
+.navigasi ul
+{
+    position: relative;
+    display: flex;
+    right: 500px;
+    font-size: 15px;
+}
+.navigasi ul li
+{
+    list-style: none;
+}
+.navigasi ul li a
+{
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.navigasi ul a:hover
+{
+    color: #F6C90E;
+
+}
+.slidebar
+{
+    position: fixed;
+    top: 70px;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #36434d;
+    transition: all .5s ease;
+    z-index: 3;
+}
+.slidebar .illustration img
+{
+    display: flex;
+    padding: 20px 70px;
+    width: 250px;
+    position: relative;
+    right: 20px;
+    
+}
+.slidebar .icons .desc
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    color: #fff;
+}
+.slidebar .icons i
+{
+    margin-right: 10px;
+}
+.slidebar .icons
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 230px;
+    box-sizing: border-box;
+    transition : all ease-in .2s
+}
+.slidebar .icons:hover
+{
+    background: #F6C90E;
+    transition : all ease-in .2s
+}
+/* Tombol Menu */
+
+#check
+{
+    display: none;
+    position: fixed;
+}
+label #btn, label #cancel
+{
+    position: fixed;
+    cursor: pointer;
+    background: #ffffff;
+
+}
+
+label #btn
+{
+    left: 20px;
+    top: 90px;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #424242;
+    padding: 8px 12px;
+    transition: all .5s;
+}
+
+label #cancel
+{
+    z-index: 1111;
+    left: -50px;
+    top: 80px;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #303841;
+    padding: 4px 8px;
+    transition: all .5s ease;
+}
+#check:checked ~ .slidebar
+{
+    left: 0;
+}
+
+#check:checked ~ label #btn
+{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel
+{
+    left: 195px;
+}
+ 
+a {
+    text-decoration: none;
+    text-align:  center;
+}
